@@ -1,9 +1,9 @@
 name: Daily Image Update
-# on:
-#   schedule:
-#   - cron: "0 2 * * 1-5"
 on:
   workflow_dispatch:
+# on:
+#   schedule:
+#   - cron: "*/30 7-17 * * mon-fri"
 jobs:
   cron:
     runs-on: ubuntu-latest
