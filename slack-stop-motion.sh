@@ -1,7 +1,7 @@
 #!/bin/bash
 
-hour=$(date +%H)
-minute=$(date +%M)
+hour=$(TZ=":America/New_York" date +%H)
+minute=$(TZ=":America/New_York" date +%M)
 echo $hour
 echo $minute
 img="image-11.jpg"
