@@ -4,4 +4,11 @@ name: Daily Image Update
 #   - cron: "0 2 * * 1-5"
 on:
   workflow_dispatch:
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run : |
+          "${GITHUB_WORKSPACE}/slack-stop-motion.sh"
 

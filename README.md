@@ -1,1 +1,1 @@
-# slack-stop-motion
+# Slack Stop Motion
