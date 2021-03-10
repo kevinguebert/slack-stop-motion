@@ -11,5 +11,6 @@ jobs:
       - uses: actions/checkout@v2
       - run : |
           chmod +x "${GITHUB_WORKSPACE}/slack-stop-motion.sh"
+          export TOKEN=${{ secrets.SLACK_TOKEN }}
           "${GITHUB_WORKSPACE}/slack-stop-motion.sh"
 
