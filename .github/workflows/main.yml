@@ -1,7 +1,7 @@
 name: Daily Image Update
 on:
   schedule:
-  - cron: "*/30 7-17 * * mon-fri"
+  - cron: "*/30 12-22 * * mon-fri"
 jobs:
   cron:
     runs-on: ubuntu-latest
