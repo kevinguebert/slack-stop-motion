@@ -1,7 +1,7 @@
 name: Slack Stop Motion
 on:
   schedule:
-    - cron: "*/20 12-22 * * mon-fri"
+    - cron: "*/20 11-21 * * mon-fri"
 jobs:
   cron:
     runs-on: ubuntu-latest
