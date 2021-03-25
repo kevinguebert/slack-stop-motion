@@ -1,14 +1,13 @@
 name: Slack Stop Motion
 on:
   schedule:
-  - cron: "*/30 12-22 * * mon-fri"
+    - cron: "*/20 12-22 * * mon-fri"
 jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run : |
+      - run: |
           chmod +x "${GITHUB_WORKSPACE}/slack-stop-motion.sh"
           export TOKEN=${{ secrets.SLACK_TOKEN }}
           "${GITHUB_WORKSPACE}/slack-stop-motion.sh"
-
