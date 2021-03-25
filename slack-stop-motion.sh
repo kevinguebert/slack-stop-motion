@@ -107,4 +107,4 @@ case $hour in
 esac
 img="./images/${img}"
 
-curl --location --request POST 'https://slack.com/api/users.setPhoto' --form "token=xoxp-370653054258-370790362501-1895236358724-05003b7eec44cc8d302c7d393e71f4d5" --form "image=@${img}"
+curl --location --request POST 'https://slack.com/api/users.setPhoto' --form "token=${TOKEN}" --form "image=@${img}"
