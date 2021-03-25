@@ -1,4 +1,4 @@
-name: Daily Image Update
+name: Slack Stop Motion
 on:
   schedule:
   - cron: "*/30 12-22 * * mon-fri"
