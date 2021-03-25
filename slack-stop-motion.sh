@@ -26,7 +26,7 @@ case $hour in
   fi
   ;;
 09)
-  if [$minute -lt 30]; then
+  if (($minute < 20)); then
     img="0900.jpg"
   elif (($minute < 40)); then
     img="0920.jpg"
@@ -35,7 +35,7 @@ case $hour in
   fi
   ;;
 10)
-  if [$minute -lt 30]; then
+  if (($minute < 20)); then
     img="1000.jpg"
   elif (($minute < 40)); then
     img="1020.jpg"
@@ -44,7 +44,7 @@ case $hour in
   fi
   ;;
 11)
-  if [$minute -lt 30]; then
+  if (($minute < 20)); then
     img="1100.jpg"
   elif (($minute < 40)); then
     img="1120.jpg"
@@ -53,7 +53,7 @@ case $hour in
   fi
   ;;
 12)
-  if [$minute -lt 30]; then
+  if (($minute < 20)); then
     img="1200.jpg"
   elif (($minute < 40)); then
     img="1220.jpg"
@@ -62,7 +62,7 @@ case $hour in
   fi
   ;;
 13)
-  if [$minute -lt 30]; then
+  if (($minute < 20)); then
     img="1300.jpg"
   elif (($minute < 40)); then
     img="1320.jpg"
@@ -71,7 +71,7 @@ case $hour in
   fi
   ;;
 14)
-  if [$minute -lt 30]; then
+  if (($minute < 20)); then
     img="1400.jpg"
   elif (($minute < 40)); then
     img="1420.jpg"
@@ -80,7 +80,7 @@ case $hour in
   fi
   ;;
 15)
-  if [$minute -lt 30]; then
+  if (($minute < 20)); then
     img="1500.jpg"
   elif (($minute < 40)); then
     img="1520.jpg"
@@ -89,7 +89,7 @@ case $hour in
   fi
   ;;
 16)
-  if [$minute -lt 30]; then
+  if (($minute < 20)); then
     img="1600.jpg"
   elif (($minute < 40)); then
     img="1620.jpg"
@@ -98,7 +98,7 @@ case $hour in
   fi
   ;;
 17)
-  if [$minute -lt 30]; then
+  if (($minute < 20)); then
     img="1700.jpg"
   elif (($minute < 40)); then
     img="1720.jpg"
